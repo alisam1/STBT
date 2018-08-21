@@ -1,0 +1,179 @@
+.main-menu
+{
+  display: flex;
+  flex-direction: row;
+  height: 38px;
+  margin-left: 45px;
+}
+
+.menu
+{
+  display: flex;
+  width: 175px;
+  list-style-type: none;
+  justify-content: space-around;
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+  bottom: 16px;
+}
+
+.menu__element
+{
+  font-family: "ExoTwo-Regular";
+  font-size: 10px;
+  line-height: 30px;
+  color: #2c5f76;
+  &--center
+  {
+    position: relative;
+    top: 3px;
+    right: 40px;
+    margin-left: 10px;
+  }
+  &--education
+  {
+    position: relative;
+    right: 30px;
+    top: 3px;
+  }
+  &--price
+  {
+    position: relative;
+    right: 20px;
+    top: 3px;
+  }
+  &--contacts
+  {
+    position: relative;
+    right: 10px;
+    top: 3px;
+  }
+}
+
+.phone
+{
+  width: 185px;
+  float: right;
+  margin-left: 180px;
+}
+
+.phone::after
+{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 25px;
+  background-image: url("../img/phone-call.png");
+  margin-top: -60px;
+  margin-left: 40px;
+}
+
+.phone__number
+{
+  font-family: "ExoTwo-Bold";
+  font-size: 10px;
+  line-height: 16px;
+  color: #fff;
+  position: relative;
+  bottom: 5px;
+  right: 50px;
+}
+
+.phone__description
+{
+  width: 125px;
+  font-family: "ExoTwo-Light";
+  font-size: 10px;
+  line-height: 17px;
+  color: #fff;
+  position: relative;
+  bottom: 22px;
+  right: 90px;
+  border-bottom: 1px solid #fff;
+}
+
+.map
+{
+  width: 185px;
+  float: right;
+  margin-left: 50px;
+}
+
+.map::after
+{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  background-image: url("../img/map.png");
+  margin-top: -60px;
+  margin-left: 10px;
+}
+
+.map__hours
+{
+  font-family: "ExoTwo-Bold";
+  font-size: 10px;
+  line-height: 16px;
+  color: #fff;
+  position: relative;
+  bottom: 5px;
+  right: 85px;
+}
+
+.map__scheme
+{
+  width: 70px;
+  font-family: "ExoTwo-Light";
+  font-size: 10px;
+  line-height: 17px;
+  color: #fff;
+  position: relative;
+  position: relative;
+  bottom: 22px;
+  right: 65px;
+  border-bottom: 1px solid #fff;
+}
+
+.education
+{
+  width: 185px;
+  float: right;
+  margin-left: 50px;
+}
+
+.education::after
+{
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 29px;
+  background-image: url("../img/img_educ.png");
+  margin-top: -58px;
+  margin-left: -45px;
+}
+
+.education__write
+{
+  font-family: "ExoTwo-Bold";
+  font-size: 10px;
+  line-height: 16px;
+  color: #fff;
+  position: relative;
+  bottom: 5px;
+  right: 110px;
+}
+
+.education__on
+{
+  width: 58px;
+  font-family: "ExoTwo-Light";
+  font-size: 10px;
+  line-height: 17px;
+  color: #fff;
+  position: relative;
+  bottom: 22px;
+  right: 110px;
+  border-bottom: 1px solid #fff;
+}

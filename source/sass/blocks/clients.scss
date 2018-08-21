@@ -1,0 +1,119 @@
+.clients
+{
+  height: 278px;
+  background-color: #525252;
+  margin-top: 85px;
+}
+
+.clients__list
+{
+  width: 1160px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: 130px;
+  position: relative;
+  top: 50px;
+  justify-content: space-around;
+}
+
+.clients__item--prom img
+{
+  position: relative;
+  left: -35px;
+}
+
+.clients__item--develop img
+{
+  position: relative;
+  top: 10px;
+}
+
+.clients__item--gkh img
+{
+  position: relative;
+  top: 10px;
+}
+
+
+.clients__item--culture img
+{
+  position: relative;
+  right: 48px;
+  top: 31px;
+}
+
+.clients__item--medicine img
+{
+  position: relative;
+  right: 38px;
+  top: 12px;
+}
+
+.clients__item--adm img
+{
+  position: relative;
+  left: -30px;
+  top: 45px;
+}
+
+
+
+
+.clients__description
+{
+  font-family: "ExoTwo-Light";
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.clients__item--prom .clients__description
+{
+  width: 110px;
+  position: relative;
+  right: 40px;
+  top: 2px;
+}
+
+.clients__item--develop .clients__description
+{
+  width: 110px;
+  position: relative;
+  right: 20px;
+  top: 13px;
+}
+
+.clients__item--gkh .clients__description
+{
+  width: 155px;
+  position: relative;
+  right: 20px;
+  top: 15px;
+
+}
+
+.clients__item--culture .clients__description
+{
+  position: relative;
+  left: -30px;
+  top: 33px;
+  width: 100px;
+}
+
+.clients__item--medicine .clients__description
+{
+  position: relative;
+  right: 32px;
+  top: 14px;
+  width: 100px;
+}
+.clients__item--adm .clients__description
+{
+  width: 120px;
+  position: relative;
+  right: 37px;
+  top: 50px;
+  text-align: right;
+}
