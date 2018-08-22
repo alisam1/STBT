@@ -349,3 +349,73 @@ padding-top: 80px;
   margin-top: -10px;
   margin-bottom: 100px;
 }
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+
+
+  .course--electro {
+
+    position: relative;
+    bottom: 20px;
+  }
+
+  .course--prom {
+
+    bottom: 41px;
+    position: relative;
+    padding-top: 72px;
+  }
+
+  .course--prom .course__img
+  {
+    position: relative;
+    right: 10px;
+  }
+
+  .course--prom .course__title
+  {
+    position: relative;
+    right: 10px;
+  }
+
+  .course--height
+  {
+    position: relative;
+    bottom: 52px;
+  }
+
+  .course--prof
+  {
+    position: relative;
+    bottom: 40px;
+  }
+
+.course:nth-child(1)
+{
+  border-right: 1px solid #426177;
+}
+
+.course:nth-child(3)
+{
+  border-right: 1px solid #426177;
+  border-left: none;
+}
+
+.course:nth-child(4)
+{
+  border-bottom: 1px solid #426177;
+  border-right: none;
+}
+
+.course:nth-child(5)
+{
+  border-bottom: none;
+}
+
+.course:nth-child(6)
+{
+  border-left: 1px solid #426177;
+  border-bottom: none;
+}
+
+}
