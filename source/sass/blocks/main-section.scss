@@ -10,6 +10,12 @@
   align-items: center;
 }
 
+.main-section__low
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .logo
 {
   position: relative;
@@ -187,7 +193,9 @@
 .main-description
 {
   width: 25%;
-  padding-top: 40px;
+  padding-top: 250px;
+  left: -100px;
+  position: relative;
 }
 
 .main-description__title
