@@ -505,6 +505,17 @@ template {
       -ms-flex-align: center;
           align-items: center; }
 
+.main-section__low {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
 .logo {
   position: relative;
   top: -225px;
@@ -640,7 +651,9 @@ template {
 
 .main-description {
   width: 25%;
-  padding-top: 40px; }
+  padding-top: 250px;
+  left: -100px;
+  position: relative; }
 
 .main-description__title {
   font-family: "ExoTwo-Bold";
