@@ -1,6 +1,11 @@
 .results
 {
-  height: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  margin-bottom: 160px;
 }
 
 .results__title
@@ -8,7 +13,6 @@
   font-family: "ExoTwo-Regular";
   font-size: 25px;
   color: #2a2a2a;
-  margin-left: 380px;
 
 }
 
@@ -26,8 +30,6 @@
 .results__slider
 {
   width: 600px;
-  margin-left: 400px;
-  margin-top: 75px;
 }
 
 .results__slider::before
@@ -37,7 +39,7 @@
   width: 31px;
   height: 73px;
   background-image: url("../img/left_arrow.png");
-  margin-top: 40px;
+  margin-top: 70px;
   margin-left: -70px;
 }
 

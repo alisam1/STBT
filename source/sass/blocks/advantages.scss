@@ -1,6 +1,5 @@
 .advantages
 {
-  height: 790px;
   background-color: $background-color;
   margin-top: -76px;
 }
@@ -10,9 +9,10 @@
   font-family: "ExoTwo-Light";
   font-size: 24px;
   color: #fff;
-  margin-left: 535px;
   position: relative;
-  top:45px;
+  top:85px;
+  display: flex;
+  justify-content: center;
 }
 
 .advantages__title::after
@@ -23,16 +23,18 @@
   height: 2px;
   background-image: url("../img/line.png");
   top: 36px;
-  left: 95px;
 }
 
 .advantages__list
 {
-  width: 1050px;
-  list-style-type: none;
   display: flex;
-  margin-left: 180px;
-  margin-top: 130px;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding-top: 130px;
+  margin-bottom: 140px;
 }
 
 .advantages__list::after
@@ -42,8 +44,8 @@
   width: 651px;
   height: 2px;
   background-image: url("../img/big_line.png");
-  margin-top: 235px;
-  margin-left: 160px;
+  margin-top: 15%;
+  margin-left: -50px;
 }
 
 .advantages__item
@@ -109,18 +111,20 @@
     width: 71px;
     height: 68px;
     background-image: url("../img/img_work.png");
-    margin-top: -90px;
+    margin-top: -70px;
+    margin-left: 18px;
 
   }
 }
 
 .advantges__blocks
 {
-  width: 1050px;
   display: flex;
   flex-direction: row;
-  margin-left: 230px;
-  margin-top: 130px;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  padding-bottom: 80px;
 }
 
 .part
@@ -148,23 +152,24 @@
 .part--education .part__title
 {
   position: relative;
-  bottom: 7px;
-  left: 5px;
+  bottom: 27px;
+  left: 25px;
 }
 
 .part--individual .part__title
 {
   width: 175px;
   position: relative;
-  bottom: 7px;
+  bottom: 17px;
+  left: 20px;
 }
 
 .part--class .part__title
 {
   width: 130px;
   position: relative;
-  bottom: 7px;
-  left: 5px;
+  left: 25px;
+  top: 10px;
 }
 
 .part__description
@@ -179,7 +184,8 @@
   width: 300px;
   position: relative;
   bottom: 12px;
-  left: 5px;
+  bottom: 32px;
+  left: 25px;
 }
 
 .part--individual .part__description
@@ -187,12 +193,13 @@
   width: 300px;
   position: relative;
   bottom: 14px;
+  left: 20px;
 }
 
 .part--class .part__description
 {
-  width: 300px;
+  width: 90%;
   position: relative;
-  bottom: 16px;
-  left: 5px;
+  bottom: -10px;
+  left: 25px;
 }

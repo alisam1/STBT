@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   height: 38px;
-  margin-left: 45px;
+  padding-left: 10px;
 }
 
 .menu
@@ -51,11 +51,17 @@
   }
 }
 
+.page-header__categories
+{
+  display: flex;
+  position: relative;
+  margin-left: 40px;
+}
+
 .phone
 {
-  width: 185px;
+  width: 210px;
   float: right;
-  margin-left: 180px;
 }
 
 .phone::after
@@ -66,7 +72,7 @@
   height: 25px;
   background-image: url("../img/phone-call.png");
   margin-top: -60px;
-  margin-left: 40px;
+  left: 130px;
 }
 
 .phone__number
@@ -77,7 +83,6 @@
   color: #fff;
   position: relative;
   bottom: 5px;
-  right: 50px;
 }
 
 .phone__description
@@ -89,15 +94,13 @@
   color: #fff;
   position: relative;
   bottom: 22px;
-  right: 90px;
   border-bottom: 1px solid #fff;
 }
 
 .map
 {
-  width: 185px;
+  width: 190px;
   float: right;
-  margin-left: 50px;
 }
 
 .map::after
@@ -108,7 +111,7 @@
   height: 25px;
   background-image: url("../img/map.png");
   margin-top: -60px;
-  margin-left: 10px;
+  left: 310px;
 }
 
 .map__hours
@@ -119,7 +122,6 @@
   color: #fff;
   position: relative;
   bottom: 5px;
-  right: 85px;
 }
 
 .map__scheme
@@ -132,15 +134,13 @@
   position: relative;
   position: relative;
   bottom: 22px;
-  right: 65px;
   border-bottom: 1px solid #fff;
 }
 
 .education
 {
-  width: 185px;
+  width: 190px;
   float: right;
-  margin-left: 50px;
 }
 
 .education::after
@@ -151,7 +151,7 @@
   height: 29px;
   background-image: url("../img/img_educ.png");
   margin-top: -58px;
-  margin-left: -45px;
+  left: 470px;
 }
 
 .education__write
@@ -162,7 +162,6 @@
   color: #fff;
   position: relative;
   bottom: 5px;
-  right: 110px;
 }
 
 .education__on
@@ -174,6 +173,5 @@
   color: #fff;
   position: relative;
   bottom: 22px;
-  right: 110px;
   border-bottom: 1px solid #fff;
 }
