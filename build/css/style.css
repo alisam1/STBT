@@ -1369,7 +1369,8 @@ template {
   width: 155px;
   height: 2px;
   background-image: url("../img/line.png");
-  top: 130px; }
+  top: 80px;
+  right: 150px; }
 
 .application__form {
   width: 610px;
