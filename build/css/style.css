@@ -496,6 +496,10 @@ template {
   bottom: 22px;
   border-bottom: 1px solid #fff; }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .education {
+    width: 100px; } }
+
 .main-section {
   background-image: url("../img/main_bg.png");
   background-position-y: -50px;
@@ -1272,6 +1276,10 @@ template {
   right: 37px;
   top: 50px;
   text-align: right; }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .clients__list {
+    width: 900px; } }
 
 .documents {
   display: -webkit-box;
