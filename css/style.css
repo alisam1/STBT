@@ -1202,7 +1202,9 @@ template {
   position: relative;
   top: 50px;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  width: 65%;
+  margin: 0 auto; }
 
 .clients__item--prom img {
   position: relative;
@@ -1274,6 +1276,10 @@ template {
   right: 37px;
   top: 50px;
   text-align: right; }
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .clients__list {
+    width: 90%; } }
 
 .documents {
   display: -webkit-box;
