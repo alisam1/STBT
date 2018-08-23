@@ -177,10 +177,124 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  .phone
+  {
+    width: 190px;
+    float: right;
+  }
+
+  .phone::after
+  {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 25px;
+    background-image: url("../img/phone-call.png");
+    margin-top: -60px;
+    left: 130px;
+  }
+
+  .phone__number
+  {
+    font-family: "ExoTwo-Bold";
+    font-size: 10px;
+    line-height: 16px;
+    color: #fff;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .phone__description
+  {
+    width: 125px;
+    font-family: "ExoTwo-Light";
+    font-size: 10px;
+    line-height: 17px;
+    color: #fff;
+    position: relative;
+    bottom: 22px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .map
+  {
+    width: 150px;
+    float: right;
+  }
+
+  .map::after
+  {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    background-image: url("../img/map.png");
+    margin-top: -60px;
+    left: 285px;
+  }
+
+  .map__hours
+  {
+    font-family: "ExoTwo-Bold";
+    font-size: 10px;
+    line-height: 16px;
+    color: #fff;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .map__scheme
+  {
+    width: 70px;
+    font-family: "ExoTwo-Light";
+    font-size: 10px;
+    line-height: 17px;
+    color: #fff;
+    position: relative;
+    position: relative;
+    bottom: 22px;
+    border-bottom: 1px solid #fff;
+  }
+
 
   .education
   {
     width: 100px;
   }
+
+
+  .education::after
+  {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 29px;
+    background-image: url("../img/img_educ.png");
+    margin-top: -58px;
+    left: 410px;
+  }
+
+  .education__write
+  {
+    font-family: "ExoTwo-Bold";
+    font-size: 10px;
+    line-height: 16px;
+    color: #fff;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .education__on
+  {
+    width: 58px;
+    font-family: "ExoTwo-Light";
+    font-size: 10px;
+    line-height: 17px;
+    color: #fff;
+    position: relative;
+    bottom: 22px;
+    border-bottom: 1px solid #fff;
+  }
+
 
 }
