@@ -337,6 +337,17 @@ template {
   padding-right: 20px;
   padding-top: 10px; }
 
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .page-header__phone {
+    font-family: "ExoTwo-Bold";
+    font-size: 8px;
+    color: #fff;
+    border-left: 1px solid #344b56;
+    border-right: 1px solid #344b56;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px; } }
+
 .main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -726,7 +737,7 @@ template {
   width: 651px;
   height: 2px;
   background-image: url("../img/big_line.png");
-  margin-top: 15%;
+  margin-top: 180px;
   margin-left: -50px; }
 
 .advantages__item {
@@ -1457,6 +1468,16 @@ input[type="checkbox"]:checked + label:before {
   padding-bottom: 13px;
   margin-top: 30px;
   margin-left: 185px; }
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .application__title::after {
+    content: "";
+    position: absolute;
+    width: 155px;
+    height: 2px;
+    background-image: url("../img/line.png");
+    top: 80px;
+    right: 180px; } }
 
 .results {
   display: -webkit-box;

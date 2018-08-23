@@ -26,3 +26,20 @@
   padding-right: 20px;
   padding-top: 10px;
 }
+
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+
+  .page-header__phone
+  {
+    font-family: "ExoTwo-Bold";
+    font-size: 8px;
+    color: #fff;
+    border-left: 1px solid rgb(52, 75, 86);
+    border-right: 1px solid rgb(52, 75, 86);
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+}
