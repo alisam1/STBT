@@ -303,7 +303,7 @@ template {
 
 .container {
   min-width: 960px;
-  max-width: 1420px;
+  max-width: 100%;
   margin: 0 auto; }
 
 .page-header {
@@ -514,9 +514,11 @@ template {
       align-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-size: cover; }
 
 .main-section__low {
+  width: 1150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -860,10 +862,10 @@ template {
   left: 25px; }
 
 .courses {
-  background-image: url("../img/bg_service.png");
-  margin-top: -65px; }
+  background-image: url("../img/bg_service.png"); }
 
 .courses__blocks {
+  width: 1150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -881,7 +883,10 @@ template {
       align-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin: 0 auto;
+  position: relative;
+  top: 90px; }
 
 .course {
   width: 372px;
@@ -1117,8 +1122,8 @@ template {
   font-size: 20px;
   color: #2c5f76;
   text-align: center;
-  margin-top: -10px;
-  margin-bottom: 100px; }
+  margin-top: 100px;
+  margin-bottom: 80px; }
 
 @media screen and (min-width: 960px) and (max-width: 1200px) {
   .course--electro {
@@ -1170,7 +1175,9 @@ template {
   position: relative;
   top: 50px;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  width: 1150px;
+  margin: 0 auto; }
 
 .clients__item--prom img {
   position: relative;
@@ -1242,6 +1249,10 @@ template {
   right: 37px;
   top: 50px;
   text-align: right; }
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .clients__list {
+    width: 768px; } }
 
 .documents {
   display: -webkit-box;
