@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Системные технологии безопасности труда</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="page-header container">
@@ -36,6 +37,28 @@
     <main class="main-page container">
 
       <section class="main-section">
+        <div class="tab-box">
+          <ul class="tab-nav">
+              <li><a href="#t1"><img src="img/icon_1.png" alt=""></a></li>
+              <li><a href="#t2"><img src="img/icon_2.png" alt=""></a></li>
+              <li><a href="#t3"><img src="img/icon_1.png" alt=""></a></li>
+              <li><a href="#t4"><img src="img/icon_1.png" alt=""></a></li>
+              <li><a href="#t5"><img src="img/icon_1.png" alt=""></a></li>
+              <li><a href="#t6"><img src="img/icon_1.png" alt=""></a></li>
+              <li><a href="#t7"><img src="img/icon_1.png" alt=""></a></li>
+          </ul>
+          <div class="tab-panels">
+              <div class="pop-block" id="t1">Описание первой вкладки</div>
+              <div class="pop-block" id="t2">Описание второй вкладки</div>
+              <div class="pop-block" id="t3">Описание третьей вкладки</div>
+              <div class="pop-block" id="t4">Описание третьей вкладки</div>
+              <div class="pop-block" id="t5">Описание третьей вкладки</div>
+              <div class="pop-block" id="t6">Описание третьей вкладки</div>
+              <div class="pop-block" id="t7">Описание третьей вкладки</div>
+          </div>
+      </div>
+
+        <div class="main_content">
 
         <div class="main-section__top">
 
@@ -83,6 +106,8 @@
           <button class="main-description__button" name="button">Получить скидку</button>
         </div>
       </div>
+    </div>
+
       </section>
 
       <section class="advantages">
@@ -261,5 +286,31 @@
 
       
     </main>
+
+<script>
+    $(function(){
+  $('.tab-panels>div').hide();
+  $('.tab-nav a').click(function(){                         // При клике на вкладку
+    $('.tab-panels>div').hide().filter(this.hash).show();   // - показывается блок с описанием текущей вкладки
+    $('.tab-nav li').removeClass('select');                 // - удаляется класс 'select' у активной ранее вкладки
+    $(this).parent().addClass('select');                    // - добавляется класс 'select' для выбранной вкладки
+    return (false);                                         // - прерывается обработка события onClick
+  })
+  $(function(){
+  $ ('.pop-block').each(function(){
+   var closeTrigger = $(this).find('.close-block').length;
+   if (closeTrigger < 1 ){ // проверяем наличие кнопки и если нет - добавляем
+    $(this).append('<span class="close-block"></span>');
+   }else{
+    return '';
+   }
+   $('.close-block').on('click', function(){
+    $(this).closest('.pop-block').fadeOut(100);
+   });
+  });
+});
+})
+
+</script>
   </body>
   </html>
