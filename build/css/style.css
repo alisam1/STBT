@@ -1803,7 +1803,8 @@ input[type="checkbox"]:checked + label:before {
 .tab-box {
   z-index: 999;
   position: absolute;
-  right: 0; }
+  right: 0;
+  width: 83%; }
 
 .tab-box:after {
   clear: both;
@@ -1846,11 +1847,11 @@ input[type="checkbox"]:checked + label:before {
 .tab-box > div {
   margin-right: 50px;
   background: transparent;
-  width: 950px;
+  width: 100%;
   height: 475px; }
 
 #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
-  width: 950px;
+  width: 100%;
   height: 475px;
   background-color: #fff; }
 
