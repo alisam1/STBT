@@ -1,0 +1,66 @@
+.tab-box
+{
+  z-index: 999;
+  position: absolute;
+  right: 0;
+}
+
+.tab-box:after{
+  clear:both;
+  content:"";
+  display:block;
+}
+.tab-nav{
+  margin:0;
+  padding:0;
+  list-style:none;
+  width:100px;
+  float:right;
+}
+.tab-nav li{
+  float: right;
+  margin-bottom: 1px solid #fff;
+  background: #426a7b;
+  width: 80px;
+  height: 68px;
+}
+.tab-nav li a{
+  display:inline-block;
+  padding:5px 10px;
+  font:normal 12px Arial, Helvetica, sans-serif;
+  color:#fff;
+  text-decoration:none;
+}
+.tab-nav li a:hover{
+  color:#fff;
+  text-decoration:none;
+  background:#777;
+}
+.tab-nav li.select a{
+  background:#bbb;
+}
+.tab-nav .active{
+  display:inline-block;
+  padding:5px;
+}
+.tab-box>div{
+  margin-right: 50px;
+  background:transparent;
+  width: 950px;
+  height: 475px;
+}
+
+#t1, #t2, #t3, #t4, #t5, #t6, #t7
+{
+  width: 950px;
+  height: 475px;
+  background-color: #fff;
+}
+
+.close-block
+{
+  background-image: url("../img/people.png");
+  width: 30px;
+  height: 30px;
+  display: flex;
+}

@@ -4,34 +4,41 @@
   background-position-y: -50px;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-content: space-between;
   align-items: center;
   background-size: cover;
 }
 
+.main_content
+{
+  height: 700px;
+}
+
+.main-section__top
+{
+  margin-bottom: 20px;
+}
+
 .main-section__low
 {
-  width: 1150px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 1100px;
 }
 .logo
 {
-  position: relative;
-  top: -225px;
-  left: 110px;
+  margin-bottom: 20px;
 }
 
 .table{
-  width:75%;
+  width:70%;
   height:240px;
-  margin-top: 240px;
   position: relative;
-  right: 150px;
-  margin-bottom: 210px;
+  margin-bottom: 200px;
+  margin-left: -25px;
 }
 
 .table td span
@@ -194,10 +201,7 @@
 
 .main-description
 {
-  width: 25%;
-  padding-top: 250px;
-  left: -100px;
-  position: relative;
+  width: 250px;
 }
 
 .main-description__title
