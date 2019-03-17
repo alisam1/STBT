@@ -4,7 +4,6 @@
   height: 131px; /* высота блока с flip */
   position: relative;
   bottom: 20px;
-  border-bottom: 1px solid #4b778a;
   cursor: pointer;
 
   /*transition effects */
@@ -41,6 +40,12 @@
 .card .back {
   width: 100%;
   z-index: 9998;
+}
+
+.card .back span {
+  position: relative;
+  top: 0;
+  color: #fff;
 }
 
 .card .back {
