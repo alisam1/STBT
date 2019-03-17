@@ -351,3 +351,16 @@ img.mfp-img {
   .mfp-container {
     padding-left: 6px;
 padding-right: 6px; } }
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+
+  .mfp-container {
+    left: 25%;}
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+
+  .mfp-container {
+    left: 20%; }
+}

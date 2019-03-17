@@ -181,3 +181,30 @@ h3.cardTitle {
   padding-right: 5px;
   padding-left: 5px;
 }
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+
+  .card
+  {
+    width: 190px;
+  }
+
+  .icon_group
+  {
+    padding-bottom: 5px;
+  }
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+
+  .card
+  {
+    width: 170px;
+  }
+
+  .icon_group
+  {
+    padding-bottom: 5px;
+  }
+}
