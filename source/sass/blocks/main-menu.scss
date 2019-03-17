@@ -1,61 +1,100 @@
-.main-menu
-{
-  display: flex;
-  flex-direction: row;
-  height: 38px;
-  padding-left: 10px;
+.nav {
+  top: 10px;
+  left: 50%;
+  bottom: 50px;
+  left: 50%;
+  width: 310px;
+  height: 60px;
+  margin-top: -25px;
+  background: #2c5f76;
 }
-
-.menu
-{
-  display: flex;
-  width: 175px;
-  list-style-type: none;
-  justify-content: space-around;
-  background-color: #fff;
-  height: 100%;
+.nav:hover .link {
+  width: 5%;
+}
+.nav .link {
   position: relative;
-  bottom: 16px;
+  float: left;
+  width: 20px;
+  height: 100%;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-right: 1px solid rgba(255, 255, 255, 1);
+  transition: .5s width;
+  overflow: hidden;
+  cursor: pointer;
+}
+.nav .link:last-child {
+  border-right: 0;
+}
+.nav .link:hover {
+  width: 80%;
+}
+.nav .link .small {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  line-height: 78px;
+  text-align: center;
+  font-family: fontawesome;
+  font-size: 24px;
+}
+.nav .link .full {
+  position: absolute;
+  left: 17px;
+  text-transform: uppercase;
+}
+.nav .link .full .menu_list {
+    font-weight: bold;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-left: -30px;
 }
 
-.menu__element
+.menu_item
 {
   font-family: "ExoTwo-Regular";
   font-size: 10px;
-  line-height: 30px;
-  color: #2c5f76;
-  &--center
-  {
-    position: relative;
-    top: 3px;
-    right: 40px;
-    margin-left: 10px;
-  }
-  &--education
-  {
-    position: relative;
-    right: 30px;
-    top: 3px;
-  }
-  &--price
-  {
-    position: relative;
-    right: 20px;
-    top: 3px;
-  }
-  &--contacts
-  {
-    position: relative;
-    right: 10px;
-    top: 3px;
-  }
+  line-height: 28px;
+  color: #fff;
+  padding-right:7px;
+  padding-top: 15px;
+}
+
+.nav .link .full .f2 {
+  margin-top: 8px;
+  font-size: 12px;
+}
+.nav .link .prev {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  font-family: fontawesome;
+  font-size: 12px;
+  line-height: 78px;
+  transition: .5s opacity;
+  opacity: 0;
+}
+.nav .link:hover .prev {
+  opacity: 0;
+}
+.nav:hover .prev {
+  opacity: 1;
 }
 
 .page-header__categories
 {
   display: flex;
   position: relative;
-  margin-left: 40px;
+  margin-left: 0px;
+}
+
+.phone_information
+{
+  width: 125px;
+  text-align: right;
 }
 
 .phone
@@ -72,7 +111,7 @@
   height: 25px;
   background-image: url("../img/phone-call.png");
   margin-top: -60px;
-  left: 130px;
+  left: 135px;
 }
 
 .phone__number
@@ -85,6 +124,14 @@
   bottom: 5px;
 }
 
+.phone__description a
+{
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
+
 .phone__description
 {
   width: 125px;
@@ -94,7 +141,6 @@
   color: #fff;
   position: relative;
   bottom: 22px;
-  border-bottom: 1px solid #fff;
 }
 
 .map
@@ -103,6 +149,11 @@
   float: right;
 }
 
+.map_information
+{
+  width: 100px;
+  text-align: right;
+}
 .map::after
 {
   content: "";
@@ -111,7 +162,7 @@
   height: 25px;
   background-image: url("../img/map.png");
   margin-top: -60px;
-  left: 310px;
+  left: 320px;
 }
 
 .map__hours
@@ -126,7 +177,6 @@
 
 .map__scheme
 {
-  width: 70px;
   font-family: "ExoTwo-Light";
   font-size: 10px;
   line-height: 17px;
@@ -134,6 +184,13 @@
   position: relative;
   position: relative;
   bottom: 22px;
+}
+
+.map__scheme a
+{
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
   border-bottom: 1px solid #fff;
 }
 
@@ -166,14 +223,20 @@
 
 .education__on
 {
-  width: 58px;
   font-family: "ExoTwo-Light";
   font-size: 10px;
   line-height: 17px;
   color: #fff;
   position: relative;
   bottom: 22px;
-  border-bottom: 1px solid #fff;
+}
+
+.education__on a
+{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {

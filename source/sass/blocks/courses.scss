@@ -299,6 +299,20 @@ padding-top: 80px;
   text-transform: uppercase;
   margin-left: 105px;
   margin-top: -5px;
+  cursor: pointer;
+}
+
+.course__button:hover
+{
+  background-color: #fcd149;
+  color: #fff;
+}
+
+
+.course__button:active
+{
+  background-color: #fcd149;
+  color: #fff;
 }
 
 .course--work .course__button
@@ -340,7 +354,7 @@ padding-top: 80px;
 {
   position: relative;
   left: -15px;
-  bottom: 10px;
+  top: 5px;
 }
 
 .courses__description

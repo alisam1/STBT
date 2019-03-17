@@ -31,6 +31,7 @@
   text-decoration:none;
   border-bottom: 1px solid #fff;
   width: 75%;
+  height: 60px;
 }
 
 .tab-nav li:nth-child(7) a
@@ -40,8 +41,9 @@
 
 .tab-nav li a img
 {
-   padding-top: 10px;
-   padding-bottom: 10px;
+  height: auto;
+   padding-top: 12px;
+   padding-bottom:0px;
    padding-left: 10px;
 }
 
@@ -68,13 +70,13 @@
 #t1, #t2, #t3, #t4, #t5, #t6, #t7
 {
   width: 100%;
-  height: 490px;
+  height: 495px;
   background-color: #fff;
 }
 
 .close-block
 {
-  background-image: url("../img/close.png");
+  background-image: url("../img/close_icon.png");
   width: 16px;
   height: 16px;
   display: flex;
@@ -149,22 +151,35 @@
   font-size: 12px;
   line-height: 15px;
   color: #000;
-  border: 1px solid #4b778a;
   padding-top: 20px;
 }
 
 .table__content span
 {
-  width: 120px;
+  width: 100px;
   position: relative;
   left: 20px;
-  padding-right: 20px;
+  padding-right: 25px;
 }
 
-.table__content:nth-child(1)
+.table__content--one
 {
   border:none;
   border-bottom: 1px solid #4b778a;
+  border-right: 1px solid #4b778a;
+}
+
+.table__content--two
+{
+  border:none;
+  border-right: 1px solid #4b778a;
+}
+
+.table__content--three
+{
+  border:none;
+  border-top: 1px solid #4b778a;
+  border-right: 1px solid #4b778a;
 }
 
 .table__content:nth-child(5)

@@ -3,9 +3,10 @@
   "version": "1.0.1",
   "private": true,
   "description": "Системные технологии безопасности труда",
-  "devDependencies": { 
+  "devDependencies": {
     "autoprefixer": "8.3.x",
     "browser-sync": "^2.24.4",
+    "del": "^4.0.0",
     "gulp": "3.9.x",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^4.1.0",
@@ -46,7 +47,7 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.11"
+    "node": "10.13"
   },
   "dependencies": {
     "ajv": "^6.5.0",

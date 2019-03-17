@@ -147,6 +147,20 @@ input[type="checkbox"]:checked + label:before {
   padding-bottom: 13px;
   margin-top: 30px;
   margin-left: 185px;
+  cursor: pointer;
+}
+
+.applicationButton:hover
+{
+  background-color: #fcd149;
+  color: #fff;
+}
+
+
+.applicationButton:active
+{
+  background-color: #fcd149;
+  color: #fff;
 }
 
 @media screen and (min-width: 960px) and (max-width: 1200px) {

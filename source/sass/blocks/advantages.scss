@@ -6,13 +6,12 @@
 
 .advantages__title
 {
+  width: 400px;
   font-family: "ExoTwo-Light";
   font-size: 24px;
   color: #fff;
-  position: relative;
-  top:85px;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  padding-top: 35px;
 }
 
 .advantages__title::after
@@ -22,100 +21,65 @@
   width: 155px;
   height: 2px;
   background-image: url("../img/line.png");
-  top: 36px;
+  margin-top: 50px;
+  margin-left: -250px;
 }
 
-.advantages__list
+.advantages__all
 {
+  width: 1000px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: space-between;
-  align-items: center;
-  list-style-type: none;
-  padding-top: 130px;
-  margin-bottom: 140px;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
-.advantages__list::after
+.advantages__all::after
 {
   content: "";
   position: absolute;
   width: 651px;
   height: 2px;
   background-image: url("../img/big_line.png");
-  margin-top: 180px;
-  margin-left: -50px;
+  margin-left: 200px;
+  margin-top: 250px;
+}
+
+.advantages__block
+{
+  width: 250px;
+  padding-bottom: 50px;
+}
+
+.advantages__img
+{
+  height: 70px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.advantages__description
+{
+  font-family: "ExoTwo-Light";
+  font-size: 15px;
+  color: #fff;
+  padding-top: 20px;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .advantages__item
 {
-  width: 270px;
+  width: 250px;
   font-family: "ExoTwo-Light";
   font-size: 15px;
   color: #fff;
   margin-top:90px;
-  &--technology::before
-  {
-    content: "";
-    position: absolute;
-    width: 103px;
-    height: 78px;
-    background-image: url("../img/img_tech.png");
-    margin-top: -90px;
-  }
-
-  &--sale
-  {
-    width: 135px;
-    margin-left: 80px;
-  }
-
-  &--sale::before
-  {
-    content: "";
-    position: absolute;
-    width: 69px;
-    height: 63px;
-    background-image: url("../img/img_percent.png");
-    margin-top: -90px;
-  }
-
-  &--hours
-  {
-    width: 215px;
-    margin-left: 65px;
-  }
-
-  &--hours::before
-  {
-    content: "";
-    position: absolute;
-    width: 95px;
-    height: 69px;
-    background-image: url("../img/img_hours.png");
-    background-repeat: no-repeat;
-    margin-top: -90px;
-  }
-
-  &--work
-  {
-    width: 225px;
-    margin-left: 65px;
-  }
-
-  &--work::before
-  {
-    content: "";
-    position: absolute;
-    width: 71px;
-    height: 68px;
-    background-image: url("../img/img_work.png");
-    margin-top: -70px;
-    margin-left: 18px;
-
-  }
 }
+
 
 .advantges__blocks
 {
@@ -198,7 +162,7 @@
 
 .part--class .part__description
 {
-  width: 90%;
+  width: 100%;
   position: relative;
   bottom: -10px;
   left: 25px;
