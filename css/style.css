@@ -385,7 +385,7 @@ template {
   left: 0;
   line-height: 78px;
   text-align: center;
-  font-family: fontawesome;
+  font-family: "Fontawesome";
   font-size: 24px; }
 
 .nav .link .full {
