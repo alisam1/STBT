@@ -1987,6 +1987,24 @@ input[type="checkbox"]:checked + label:before {
   top: 5px;
   left: 5px; }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .information p {
+    font-family: "ExoTwo-Regular";
+    font-size: 14px;
+    color: #fff; }
+  .information__about {
+    width: 250px; }
+  .information__address {
+    width: 200px;
+    position: relative;
+    bottom: 0px;
+    right: 0px; }
+  .information__phone {
+    width: 120px;
+    position: relative;
+    top: 0px;
+    left: 0px; } }
+
 .tab-box {
   z-index: 999;
   position: absolute;
@@ -2346,6 +2364,10 @@ input[type="checkbox"]:checked + label:before {
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   .top_carousel-wrapper .arrow-next {
     right: -70px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .top_carousel-wrapper .arrow-next {
+    right: 70px; } }
 
 .card {
   width: 215px;
