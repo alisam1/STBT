@@ -364,3 +364,8 @@ padding-right: 6px; } }
   .mfp-container {
     left: 20%; }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+.mfp-container {
+  left: 1%;}
+}

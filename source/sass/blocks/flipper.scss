@@ -208,3 +208,15 @@ h3.cardTitle {
     padding-bottom: 5px;
   }
 }
+
+@media screen and (min-width:768px) and (max-width: 1279px) {
+
+.card .front, .card .back {
+    display: block;
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+}
