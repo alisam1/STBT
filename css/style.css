@@ -1951,6 +1951,9 @@ input[type="checkbox"]:checked + label:before {
   margin-left: 60px;
   margin-top: 40px; }
 
+.pop-block__table--tablet {
+  display: none; }
+
 .table__content {
   width: 215px;
   height: 110px;
@@ -2038,6 +2041,39 @@ input[type="checkbox"]:checked + label:before {
     color: #000; } }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .tab-box {
+    width: 100%; }
+  .pop-block__table--tablet {
+    display: block;
+    width: 500px;
+    height: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 60px;
+    margin-top: 40px; }
+  .pop-block__table--tablet .table__content--one:nth-child(2) {
+    border: none;
+    border-bottom: 1px solid #4b778a;
+    border-right: none; }
+  .pop-block__table--tablet .table__content--two:nth-child(4) {
+    border: none;
+    border-bottom: 1px solid #4b778a;
+    border-right: none; }
+  .pop-block__table--tablet .table__content--three:nth-child(5) {
+    border: none;
+    border-top: 1px solid #4b778a;
+    border-right: 1px solid #4b778a; }
+  .pop-block__table--tablet .table__content--three:nth-child(6) {
+    border: none;
+    border-bottom: none;
+    border-right: none; }
   .pop-block__table {
     display: none; } }
 
@@ -2201,7 +2237,7 @@ input[type="checkbox"]:checked + label:before {
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .top_carousel-wrapper .arrow-next {
-    right: 70px; } }
+    right: 10px; } }
 
 .card {
   width: 215px;
@@ -2344,6 +2380,15 @@ h3.cardTitle {
     width: 170px; }
   .icon_group {
     padding-bottom: 5px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .card .front, .card .back {
+    display: block;
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; } }
 
 .modal_top {
   display: -webkit-box;
@@ -2938,6 +2983,10 @@ img.mfp-img {
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   .mfp-container {
     left: 20%; } }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .mfp-container {
+    left: 1%; } }
 
 .ac-container {
   width: 270px;
