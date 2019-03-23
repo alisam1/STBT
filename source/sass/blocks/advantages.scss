@@ -113,29 +113,6 @@
   color: #fff;
 }
 
-.part--education .part__title
-{
-  position: relative;
-  bottom: 27px;
-  left: 25px;
-}
-
-.part--individual .part__title
-{
-  width: 175px;
-  position: relative;
-  bottom: 17px;
-  left: 20px;
-}
-
-.part--class .part__title
-{
-  width: 130px;
-  position: relative;
-  left: 25px;
-  top: 10px;
-}
-
 .part__description
 {
   font-family: "ExoTwo-Regular";
@@ -143,30 +120,6 @@
   color: #fff;
 }
 
-.part--education .part__description
-{
-  width: 300px;
-  position: relative;
-  bottom: 12px;
-  bottom: 32px;
-  left: 25px;
-}
-
-.part--individual .part__description
-{
-  width: 300px;
-  position: relative;
-  bottom: 14px;
-  left: 20px;
-}
-
-.part--class .part__description
-{
-  width: 100%;
-  position: relative;
-  bottom: -10px;
-  left: 25px;
-}
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 
@@ -175,4 +128,50 @@
   padding-right: 20px;
 
   }
+
+  .advantages__all {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.advantages__block {
+    width: 300px;
+    padding-bottom: 50px;
+}
+
+  .advantages__all::after {
+    margin-left: 50px;
+    margin-top: 450px;
+}
+
+.part
+{
+  width: 230px;
+  height: 300px;
+  padding-right: 20px;
+}
+
+.part:nth-child(2)
+{
+  margin-left: 0px;
+}
+
+.part:nth-child(3)
+{
+  padding-right: 0px;
+  margin-left: 0;
+}
 }

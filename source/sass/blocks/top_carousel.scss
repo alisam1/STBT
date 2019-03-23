@@ -82,3 +82,22 @@
     z-index: 3;
     opacity: 1;
   }
+
+  @media screen and (min-width: 1440px) and (max-width: 1600px) {
+
+    .top_carousel-wrapper .arrow-next {
+   right: -100px;
+ }
+
+
+  }
+
+  @media screen and (min-width: 1280px) and (max-width: 1439px) {
+
+
+    .top_carousel-wrapper .arrow-next {
+   right: -70px;
+ }
+
+
+  }

@@ -16,9 +16,7 @@
   float: left;
   width: 20px;
   height: 100%;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   color: #fff;
-  border-right: 1px solid rgba(255, 255, 255, 1);
   transition: .5s width;
   overflow: hidden;
   cursor: pointer;
@@ -71,7 +69,7 @@
   position: absolute;
   top: 0;
   left: 7px;
-  font-family: fontawesome;
+  font-family: "Fontawesome";
   font-size: 12px;
   line-height: 78px;
   transition: .5s opacity;
@@ -239,7 +237,81 @@
     border-bottom: 1px solid #fff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+  .nav {
+    top: 10px;
+    left: 50%;
+    bottom: 50px;
+    width:90px;
+    height: 60px;
+    margin-top: -25px;
+    background: #2c5f76;
+  }
+
+  .nav .link .full {
+    position: absolute;
+    left: 0px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.nav .link {
+    position: relative;
+    width: 20px;
+    height: 100%;
+    color: #fff;
+    -webkit-transition: .5s width;
+    transition: .5s width;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.nav .link:hover {
+  position: relative;
+  width: 20px;
+  height: 100%;
+  color: #2c5f76;
+  border-right: 1px solid rgba(255, 255, 255, 1);
+  transition: .5s height;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 0;
+}
+
+.nav .link:hover .small
+{
+  left: 25px;
+}
+
+  .nav .link:hover {
+    width: 80%;
+    height: 200px;
+    background-color: #fff;
+  }
+
+  .nav .link .full .menu_list {
+      font-weight: bold;
+      white-space: nowrap;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      list-style-type: none;
+      margin-left: -30px;
+  }
+
+  .menu_item
+  {
+    font-family: "ExoTwo-Regular";
+    font-size: 10px;
+    line-height: 28px;
+    color: #2c5f76;
+    padding-right:0px;
+    padding-top: 5px;
+  }
+
   .phone
   {
     width: 190px;
@@ -278,6 +350,11 @@
     bottom: 22px;
     border-bottom: 1px solid #fff;
   }
+
+  .phone__description a {
+
+    border-bottom: none;
+}
 
   .map
   {
@@ -358,6 +435,15 @@
     bottom: 22px;
     border-bottom: 1px solid #fff;
   }
+
+  .education__on a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    border-bottom:none;
+}
+
+
 
 
 }
