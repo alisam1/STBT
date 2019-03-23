@@ -1245,25 +1245,10 @@ template {
   top: 90px; }
 
 .course {
-  width: 372px;
-  height: 392px;
+  width: 370px;
+  height: 390px;
   border-bottom: 1px solid #426177;
   padding-top: 30px; }
-
-.course--prom {
-  bottom: 27px;
-  position: relative;
-  padding-top: 72px; }
-
-.course--height {
-  bottom: 27px;
-  position: relative;
-  padding-top: 56px; }
-
-.course--prof {
-  bottom: 27px;
-  position: relative;
-  padding-top: 80px; }
 
 .course:nth-child(1) {
   border-right: 1px solid #426177; }
@@ -1283,81 +1268,17 @@ template {
   border-bottom: none; }
 
 .course__img {
-  text-align: center; }
-
-.course--work .course__img {
-  position: relative;
-  right: 0px; }
-
-.course--fire .course__img {
-  position: relative;
-  right: 5px; }
-
-.course--electro .course__img {
-  position: relative;
-  right: 25px; }
-
-.course--prom .course__img {
-  position: relative;
-  right: 10px; }
-
-.course--height .course__img {
-  position: relative;
-  left: -5px; }
-
-.course--prof .course__img {
-  position: relative;
-  left: -25px; }
+  text-align: center;
+  height: 130px;
+  padding-bottom: 20px; }
 
 .course__title {
   width: 240px;
   font-family: "ExoTwo-Bold";
   font-size: 20px;
   color: #2c5f76;
-  text-align: center; }
-
-.course--work .course__title {
   text-align: center;
-  margin-left: 95px;
-  width: 180px; }
-
-.course--fire .course__title {
-  text-align: center;
-  margin-left: 65px;
-  width: 240px;
-  position: relative;
-  bottom: 2px; }
-
-.course--fire .course__title span {
-  display: block; }
-
-.course--electro .course__title {
-  text-align: center;
-  margin-left: 40px;
-  width: 240px;
-  position: relative;
-  bottom: 12px; }
-
-.course--prom .course__title {
-  text-align: center;
-  margin-left: 65px;
-  width: 240px;
-  position: relative;
-  bottom: 6px; }
-
-.course--height .course__title {
-  text-align: center;
-  margin-left: 55px;
-  width: 240px;
-  position: relative;
-  bottom: 24px; }
-
-.course--prof .course__title {
-  text-align: center;
-  margin-left: 50px;
-  width: 240px;
-  position: relative;
-  bottom: 5px; }
+  margin: 0 auto; }
 
 .course__price {
   font-family: "ExoTwo-Bold";
@@ -1365,69 +1286,12 @@ template {
   color: #000;
   text-align: center; }
 
-.course--work .course__price {
-  position: relative;
-  left: 5px; }
-
-.course--fire .course__price {
-  position: relative;
-  bottom: 5px; }
-
-.course--electro .course__price {
-  position: relative;
-  left: -15px;
-  bottom: 10px; }
-
-.course--prom .course__price {
-  position: relative;
-  bottom: 5px;
-  left: 5px; }
-
-.course--height .course__price {
-  position: relative;
-  bottom: 25px; }
-
-.course--prof .course__price {
-  position: relative;
-  left: -15px;
-  bottom: 5px; }
-
 .course__lastPrice {
   font-family: "ExoTwo-Light";
   font-size: 18px;
   color: #444444;
   text-decoration: line-through;
   text-align: center; }
-
-.course--work .course__lastPrice {
-  position: relative;
-  left: 5px;
-  bottom: 12px; }
-
-.course--fire .course__lastPrice {
-  position: relative;
-  left: -4px;
-  bottom: 17px; }
-
-.course--electro .course__lastPrice {
-  position: relative;
-  left: -15px;
-  bottom: 25px; }
-
-.course--prom .course__lastPrice {
-  position: relative;
-  left: 5px;
-  bottom: 20px; }
-
-.course--height .course__lastPrice {
-  position: relative;
-  left: 0px;
-  bottom: 37px; }
-
-.course--prof .course__lastPrice {
-  position: relative;
-  left: -15px;
-  bottom: 20px; }
 
 .course__button {
   width: 180px;
@@ -1452,42 +1316,12 @@ template {
   background-color: #fcd149;
   color: #fff; }
 
-.course--work .course__button {
-  position: relative;
-  left: 5px;
-  bottom: 2px; }
-
-.course--fire .course__button {
-  position: relative;
-  left: -4px;
-  bottom: 7px; }
-
-.course--electro .course__button {
-  position: relative;
-  left: -15px;
-  bottom: 15px; }
-
-.course--prom .course__button {
-  position: relative;
-  left: 5px;
-  bottom: 10px; }
-
-.course--height .course__button {
-  position: relative;
-  left: 0px;
-  bottom: 27px; }
-
-.course--prof .course__button {
-  position: relative;
-  left: -15px;
-  top: 5px; }
-
 .courses__description {
   font-family: "ExoTwo-Bold";
   font-size: 20px;
   color: #2c5f76;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 130px;
   margin-bottom: 80px; }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
