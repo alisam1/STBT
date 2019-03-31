@@ -1,0 +1,238 @@
+
+
+/* Контейнер */
+.modal {
+
+/* Слой перекрытия */
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0,0,0,0.5);
+z-index: 10000;
+
+/* Трансформации прозрачности при открытии  */
+-webkit-transition: opacity 500ms ease-in;
+-moz-transition: opacity 500ms ease-in;
+transition: opacity 500ms ease-in;
+
+/* Скрываем изначально */
+opacity: 0;
+pointer-events: none;
+}
+
+/* Показываем модальное окно */
+.modal:target {
+opacity: 1;
+pointer-events: auto;
+}
+
+/* Содержание */
+.modal > div {
+width: 586px;
+height: auto;
+background: #ffffff;
+position: relative;
+margin: 10% auto;
+margin-top: 6%;
+
+/* По умолчанию минимизируем анимацию */
+-webkit-animation: minimise 500ms linear;
+
+/* Придаем хороший вид */
+padding: 30px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+-webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+-moz-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+text-shadow: 0 1px 0 #fff;
+}
+
+/* Изменяем анимацию при открытии модального окна*/
+.modal:target > div {
+-webkit-animation-name: bounce;
+}
+
+.modal h2 {
+font-size: 36px;
+padding: 0 0 20px;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+  	-webkit-transform: scale3d(0.1,0.1,1);
+  	-webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+  }
+  55% {
+  	-webkit-transform: scale3d(1.08,1.08,1);
+  	-webkit-box-shadow: 0 10px 20px rgba(0,0,0,0);
+  }
+  75% {
+  	-webkit-transform: scale3d(0.95,0.95,1);
+  	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.9);
+  }
+  100% {
+  	-webkit-transform: scale3d(1,1,1);
+  	-webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+  }
+}
+
+@-webkit-keyframes minimise {
+  0% {
+  	-webkit-transform: scale3d(1,1,1);
+  }
+  100% {
+  	-webkit-transform: scale3d(0.1,0.1,1);
+  }
+}
+
+/* Ссылка на кнопку Закрыть */
+.modal a[href="#close"] {
+position: absolute;
+right: 20px;
+top: 20px;
+color: transparent;
+}
+
+/* Center modal */
+
+.modal_text
+{
+  font-family: "ExoTwo-Regular";
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/* Section modal */
+
+.modal_section
+{
+  position: relative;
+  top: 65px;
+  right: 20px;
+}
+
+.modal_section__center
+{
+  position: relative;
+  top: 82px;
+  right: 20px;
+}
+
+.section_modal .modal > div {
+  width: 620px;
+  height: auto;
+  background: #2d5f77;
+  position: relative;
+  margin: 10% auto;
+  margin-top: 18%;
+  -webkit-animation: minimise 500ms linear;
+  padding: 30px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: none;
+  margin-left: 33%;
+}
+
+.section_modal--center .modal > div {
+  background: #929496;
+}
+
+
+.section_modal .modal_text
+{
+  font-family: "ExoTwo-Regular";
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
+/* Callback modal */
+
+.callback_modal .modal > div {
+  width: 450px;
+  height: auto;
+  background: #e9bc4e;
+  position: relative;
+  margin: 10% auto;
+  -webkit-animation: minimise 500ms linear;
+  padding: 30px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: none;
+  margin-left: 39%;
+}
+
+.callback_text p
+{
+  font-family: "ExoTwo-Regular";
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+}
+
+#backPhone
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#telForm
+{
+  width: 200px;
+  margin: 0 auto;
+}
+
+#telButton
+{
+  width: 150px;
+  margin: 0 auto;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  background-color: #000;
+  margin-top: 10px;
+  font-family: "ExoTwo-Regular";
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+@media screen and (min-width:768px) and (max-width: 1279px) {
+
+  .section_modal .modal > div {
+    width: 620px;
+    height: auto;
+    background: #2d5f77;
+    position: relative;
+    margin: 10% auto;
+    margin-top: 18%;
+    -webkit-animation: minimise 500ms linear;
+    padding: 30px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+    text-shadow: none;
+  }
+
+  .callback_modal .modal > div {
+    width: 450px;
+    height: auto;
+    background: #e9bc4e;
+    position: relative;
+    margin: 10% auto;
+    margin-top: 30%;
+    -webkit-animation: minimise 500ms linear;
+    padding: 30px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+    text-shadow: none;
+  }
+}
