@@ -29,13 +29,24 @@
 }
 .nav .link .small {
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: 0;
   line-height: 78px;
   text-align: center;
   font-family: "Fontawesome";
   font-size: 24px;
 }
+
+.nav .link .small::before {
+  content: "Меню";
+  position: absolute;
+  background-image: none;
+  font-size: 6px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: -15px;
+}
+
 .nav .link .full {
   position: absolute;
   left: 17px;
@@ -53,12 +64,28 @@
 
 .menu_item
 {
-  font-family: "ExoTwo-Regular";
+  padding-right:7px;
+  padding-top: 15px;
+}
+
+.menu_item a
+{
+  font-family: "ExoTwo-Light";
   font-size: 10px;
   line-height: 28px;
   color: #fff;
-  padding-right:7px;
-  padding-top: 15px;
+  text-decoration: none;
+}
+
+.menu_item a:hover
+{
+  font-family: "ExoTwo-Bold";
+  font-size: 10px;
+  line-height: 28px;
+  color: #fff;
+  padding-right:0px;
+  padding-top: 5px;
+  text-decoration: underline;
 }
 
 .nav .link .full .f2 {

@@ -139,11 +139,17 @@
 
 .table__content span
 {
-  width: 100px;
-  position: relative;
+  width: 80%;
+  position: absolute;
   left: 20px;
   top: 20px;
   padding-right: 25px;
+}
+
+.table__content span b
+{
+  font-family:  "ExoTwo-Bold";
+  font-size: 12px;
 }
 
 .table__content--one
