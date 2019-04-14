@@ -1,3 +1,89 @@
+#modal_1, #modal_2, #modal_3 {
+  position: absolute;
+  display: block;
+  width: 675px;
+  height: 265px;
+  left: -100%;
+  top: 0;
+  z-index: 1;
+  background: #2d5f77;
+  transition: right 1s 1s;
+}
+#modal_2
+{
+  background: #929496;
+}
+
+#modal_1.active, #modal_3.active {
+  left: 645px;
+  top: 340px;
+  -webkit-transition: right 1s;
+  transition: right 1s;
+}
+
+ #modal_2.active
+ {
+   left: 645px;
+   top: 340px;
+   -webkit-transition: right 1s;
+   transition: right 1s;
+
+ }
+
+ #modalButton_1, #modalButton_2, #modalButton_3
+ {
+   background: none;
+   border: none;
+   background-color: inherit;
+   margin-right: 10px;
+ }
+
+ #modalButton_2
+ {
+    margin-top: 30px;
+ }
+
+ .modal_inner__text {
+
+    font-family: "ExoTwo-Regular";
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    width: 520px;
+    margin: 0 auto;
+    padding-top: 0px;
+
+}
+
+.modal_inner__img
+{
+  position: relative;
+  bottom: 0px;
+  padding-left: 80px;
+  margin: 0;
+  padding-bottom: 10px;
+
+}
+
+.open_block
+{
+  background: none;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.close-menu
+{
+  background: none;
+  border: none;
+  background-color: inherit;
+  margin-left: 0%;
+  position: relative;
+  top:10px;
+  left: 10px;
+  cursor: pointer;
+}
 
 
 /* Контейнер */
@@ -204,6 +290,44 @@ color: transparent;
   margin-top: 20px;
 }
 
+@media screen and (min-width:1440px) and (max-width: 1600px) {
+
+#modal_1.active, #modal_3.active {
+  left: 525px;
+  top: 342px;
+  -webkit-transition: right 1s;
+  transition: right 1s;
+}
+
+ #modal_2.active
+ {
+   left: 445px;
+   top: 340px;
+   -webkit-transition: right 1s;
+   transition: right 1s;
+
+ }
+}
+
+@media screen and (min-width:1280px) and (max-width: 1439px) {
+
+#modal_1.active, #modal_3.active {
+  left: 445px;
+  top: 340px;
+  -webkit-transition: right 1s;
+  transition: right 1s;
+}
+
+ #modal_2.active
+ {
+   left: 445px;
+   top: 340px;
+   -webkit-transition: right 1s;
+   transition: right 1s;
+
+ }
+}
+
 @media screen and (min-width:768px) and (max-width: 1279px) {
 
   .section_modal .modal > div {
@@ -235,4 +359,50 @@ color: transparent;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
     text-shadow: none;
   }
+
+  #modal_10, #modal_20, #modal_30 {
+    position: absolute;
+    display: block;
+    width: 615px;
+    height: 265px;
+    left: -100%;
+    top: 0;
+    z-index: 1;
+    background: #2d5f77;
+    transition: right 1s 1s;
+  }
+  #modal_20
+  {
+    background: #929496;
+  }
+
+  #modal_10.active, #modal_30.active {
+    left: 80px;
+    top: 757px;
+    -webkit-transition: right 1s;
+    transition: right 1s;
+  }
+
+   #modal_20.active
+   {
+     position: absolute;
+     left: 75px;
+     top: 757px;
+     -webkit-transition: right 1s;
+     transition: right 1s;
+
+   }
+
+   #modalButton_10, #modalButton_20, #modalButton_30
+   {
+     background: none;
+     border: none;
+     background-color: inherit;
+     margin-right: 10px;
+   }
+
+   #modalButton_20
+   {
+      margin-top: 30px;
+   }
 }

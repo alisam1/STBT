@@ -1,102 +1,161 @@
-.top_ac-container{
-	width: 230px;
-	margin: 10px auto 30px auto;
+.accordion {
+    width: 100%;
+    max-width:280px;
+    min-height: 0;
+    display: block;
+/* относительное позиционирование */
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+    overflow: hidden
+}
+/* заголовки панелей аккордеона */
+
+.title_block {
+  font-family: "ExoTwo-Regular";
+  color: #000;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+  line-height: 20px;
+  font-size: 12px;
+  border-bottom: 1px solid #000;
+  background: #fff;
+  padding-right: 50px;
 }
 
-.top_ac-container label{
-	font-family: "ExoTwo-Regular";
-	padding: 5px 20px;
-	margin-bottom: 0;
-	position: relative;
-	z-index: 20;
-	display: block;
-	height: 30px;
-	cursor: pointer;
-	color: #000;
-	line-height: 33px;
-	font-size: 12px;
-	background: inherit;
-	box-shadow: none;
+.accordion h2:hover
+{
+  background: #d9d9d9;
 }
 
-.top_ac-container input[type="checkbox"] + label {
-		font-family: "ExoTwo-Regular";
-		color: #000;
-		padding-left: 10px;
-		padding-bottom: 15px;
-    margin-bottom: 0px;
-		line-height: 20px;
-		font-size: 12px;
-		border-bottom: 1px solid #000;
+.msg {
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
-.top_ac-container input[type="checkbox"] + label::before {
-    border: none;
+/* оформляем параграфы */
+.msg p {
+  background-color: #bbbbbb;
+  color: #fff;
+  font-family: "ExoTwo-Regular";
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  margin: 0;
+  height: 100px;
+  padding-top: 20px;
 }
 
-.top_ac-container label:hover{
-	background: #dcdcdc;
+/* Позаботимся о небольших экранах */
+@media (max-width: 550px) {
+  .accordion {
+    box-sizing: border-box;
+    transform: translate(0, 0);
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    left: 0;
+  }
 }
 
-.top_ac-container input:checked + label,
-.top_ac-container input:checked + label:hover{
-	background: #dcdcdc;
-	color: #3d7489;
-	text-shadow: none;
-	box-shadow: none;
+/* Формируем неупорядоченный список */
+.accordion .accordion_list {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
 }
 
-.top_ac-container label:hover:after,
-.top_ac-container input:checked + label:hover:after{
-	content: '';
-	position: absolute;
-	width: 24px;
-	height: 24px;
-	right: 13px;
-	top: 7px;
+/* Определяем и формируем отдельный элемент списка
+ * в который поместим скрытый флажек,
+ * заголовок панелей и блок с содержанием
+*/
+.accordion .accordion_list .accordion_item {
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
 
-.top_ac-container input:checked + label:hover:after{
+/* устанавливаем время ожидания перед воспроизведением анимации
+ * на основе нумерации в дереве элементов
+*/
+.accordion .accordion_list .accordion_item:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.accordion .accordion_list .accordion_item:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+.accordion .accordion_list .accordion_item:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.accordion .accordion_list .accordion_item:last-of-type {
+  padding-bottom: 0;
 }
 
-.top_ac-container input{
-	display: none;
+/* Сформируем  указатель переключения состояния аккордеона */
+.accordion .accordion_list .accordion_item i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+/* расположим указатель на панели заголовка справа */
+  right: 25px;
 }
 
-.top_ac-container article{
-	background: #bbbbbb;
-	margin-top: -1px;
-	overflow: hidden;
-	height: 0px;
-	position: relative;
-	z-index: 10;
-	transition:
-		height 0.3s ease-in-out,
-		box-shadow 0.6s linear;
+/* "Рисуем " сам указатель */
+.accordion .accordion_list .accordion_item i:before, .accordion .accordion_list .accordion_item i:after {
+  content: "";
+  position: absolute;
+  background-color: #eee;
+  width: 3px;
+  height: 9px;
 }
-.top_ac-container input:checked ~ article{
-	transition:
-		height 0.5s ease-in-out,
-		box-shadow 0.1s linear;
-	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+/* Добавляем элемент трансформации указателя при переключении */
+.accordion .accordion_list .accordion_item i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.accordion .accordion_list .accordion_item i:after {
+  transform: translate(2px, 0) rotate(-45deg);
 }
 
-.top_ac-container article p{
-	font-family: "ExoTwo-Regular";
-	color: #fff;
-	line-height: 20px;
-	font-size: 12px;
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+/* Делаем чекбокс скрытым*/
+.accordion .accordion_list .accordion_item input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+/* Когда у флажка установлен checked
+ * блок с содержанием скрыт
+*/
+.accordion .accordion_list .accordion_item input[type=checkbox]:checked ~ div.msg {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+/* А указатель показывает вниз */
+.accordion .accordion_list .accordion_item input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.accordion  .accordion_list .accordion_item input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+/*  Устанавливаем эффект перехода
+ * между двумя состояниями указателя
+*/
+div.msg,  .accordion_list .accordion_item i:before,  .accordion_list .accordion_item i:after {
+    transition: all 0.3s ease-in-out;
 }
 
-.top_ac-container input:checked ~ article.ac-small{
-	height: 140px;
-}
-.top_ac-container input:checked ~ article.ac-medium{
-	height: 180px;
-}
-.top_ac-container input:checked ~ article.ac-large{
-	height: 230px;
+.accordion input[type="checkbox"] {
+    display: block;
 }

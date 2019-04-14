@@ -37,7 +37,14 @@
 
 .main_section
 {
-  width: 70%;
+  width: 60%;
+}
+
+.main_section__tablet
+{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
 
 .main_section__title
@@ -74,6 +81,11 @@
   justify-content: flex-start;
   margin-top: 20px;
   margin-left: 30px;
+}
+
+.sidebar
+{
+  margin-left: -30px;
 }
 
 .modal_click
@@ -209,8 +221,11 @@
 
 .main_callback
 {
-  margin-left: 0;
-  border: none;
+    margin-left: 0;
+    border: none;
+    width: 675px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .main_callback__all
@@ -239,7 +254,23 @@
     color: #000;
 }
 
+.main_tablet
+{
+  display: none;
+}
+
 @media screen and (min-width:768px) and (max-width: 1279px) {
+
+  .main_desktop
+  {
+    display: none;
+  }
+
+  .main
+  {
+    display: flex;
+    flex-direction: column;
+  }
 
   .main_section
   {
@@ -247,12 +278,50 @@
     margin-bottom: 30px;
   }
 
+  .sidebar
+  {
+    width: 40%;
+  }
+
+  .main_section__center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+  .main_section__tablet
+  {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .main_section__title {
+
+    width: 320px;
+    font-family: "ExoTwo-Bold";
+    font-size: 20px;
+    line-height: 30px;
+    color: #2d5f77;
+    text-transform: uppercase;
+    margin-left: 60px;
+
+}
+
   .main_section__description {
-      width: 500px;
+      width: 350px;
       font-family: "ExoTwo-Regular";
       font-size: 15px;
       line-height: 25px;
       color: #000;
+  }
+
+  .center_modal
+  {
+    width: 350px;
   }
 
   .main_section__block {
@@ -261,15 +330,16 @@
     display: -ms-flexbox;
     display: flex;
     padding-top: 30px;
-    flex-direction: column;
-    margin-left: 10%;
-
+    flex-direction: row;
+    margin: 0 auto;
+    width: 615px;
 }
 
 .main_callback
 {
   margin-left: 0;
   border: none;
+  width: auto;
 }
 
 .main_callback__all
@@ -279,5 +349,10 @@
   border: 1px solid #e5a200;
   border-radius: 4px;
   margin: 0 auto;
+}
+
+.main_tablet
+{
+  display: block;
 }
 }
