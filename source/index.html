@@ -52,13 +52,13 @@
       <section class="main-section">
         <div class="tab-box">
           <ul class="tab-nav">
-              <li><a href="#t1"><img src="img/icon_1.png" alt=""></a></li>
-              <li><a href="#t2"><img src="img/icon_2.png" alt=""></a></li>
-              <li><a href="#t3"><img src="img/icon_3.png" alt=""></a></li>
-              <li><a href="#t4"><img src="img/icon_4.png" alt=""></a></li>
-              <li><a href="#t5"><img src="img/icon_5.png" alt=""></a></li>
-              <li><a href="#t6"><img src="img/icon_6.png" alt=""></a></li>
-              <li><a href="#t7"><img src="img/icon_7.png" alt=""></a></li>
+              <li><a href="#t1" onclick="myFunction()"><img src="img/icon_1.png" alt=""></a></li>
+              <li><a href="#t2" onclick="myFunction()"><img src="img/icon_2.png" alt=""></a></li>
+              <li><a href="#t3" onclick="myFunction()"><img src="img/icon_3.png" alt=""></a></li>
+              <li><a href="#t4" onclick="myFunction()"><img src="img/icon_4.png" alt=""></a></li>
+              <li><a href="#t5" onclick="myFunction()"><img src="img/icon_5.png" alt=""></a></li>
+              <li><a href="#t6" onclick="myFunction()"><img src="img/icon_6.png" alt=""></a></li>
+              <li><a href="#t7" onclick="myFunction()"><img src="img/icon_7.png" alt=""></a></li>
           </ul>
           <div class="tab-panels">
               <div class="pop-block" id="t1">
@@ -5645,6 +5645,18 @@
 <script src="js/magnific-popup.js"></script>
 
 <script type="text/javascript">
+function myFunction() {
+  var x = document.querySelector(".tab-panels");
+  if (x.style.display === "block") {
+    document.querySelector('.tab-box').style.zIndex = 998;
+  } else {
+    document.querySelector('.tab-box').style.zIndex = 999;
+    document.querySelector('.tab-box').style.backgroundColor = "inherit";
+    document.querySelector('.main_content').style.display = "block";
+
+  }
+}
+
 $(function () {
 $('.popup-modal').magnificPopup({
   type: 'inline',

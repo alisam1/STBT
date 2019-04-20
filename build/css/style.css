@@ -369,7 +369,7 @@ template {
 .nav .link {
   position: relative;
   float: left;
-  width: 20px;
+  width: 30px;
   height: 100%;
   color: #fff;
   -webkit-transition: .5s width;
@@ -394,16 +394,17 @@ template {
 
 .nav .link .small::before {
   content: "Меню";
+  font-family: "ExoTwo-Light";
   position: absolute;
   background-image: none;
-  font-size: 6px;
+  font-size: 7px;
   font-weight: normal;
   text-transform: uppercase;
   margin-top: -15px; }
 
 .nav .link .full {
   position: absolute;
-  left: 17px;
+  left: 20px;
   text-transform: uppercase; }
 
 .nav .link .full .menu_list {
@@ -647,6 +648,12 @@ template {
     color: #2c5f76;
     padding-right: 0px;
     padding-top: 5px; }
+  .menu_item a {
+    color: #2c5f76;
+    cursor: pointer; }
+  .menu_item a:hover {
+    color: #2c5f76;
+    cursor: pointer; }
   .phone {
     width: 190px;
     float: right; }
@@ -1861,7 +1868,6 @@ input[type="checkbox"]:checked + label:before {
     left: 0px; } }
 
 .tab-box {
-  z-index: 999;
   position: absolute;
   right: 0;
   width: 83%; }
@@ -2065,9 +2071,19 @@ input[type="checkbox"]:checked + label:before {
     line-height: 15px;
     color: #000; } }
 
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  b {
+    background: none;
+    border-right: none;
+    border-bottom: none; } }
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .tab-box {
     width: 100%; }
+  .table__content span b {
+    background: none;
+    border-right: none;
+    border-bottom: none; }
   .pop-block__table--tablet {
     display: block;
     width: 500px;

@@ -19,4 +19,4 @@ $(this).closest('.pop-block').fadeOut(100);
 });
 });
 });
-})
+});

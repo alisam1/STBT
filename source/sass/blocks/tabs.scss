@@ -1,6 +1,5 @@
 .tab-box
 {
-  z-index: 999;
   position: absolute;
   right: 0;
   width: 83%;
@@ -266,11 +265,28 @@
 
 }
 
+@media screen and (max-width: 1200px) and (min-width: 960px)
+{
+  b
+  {
+     background: none;
+     border-right: none;
+     border-bottom: none;
+  }
+}
+
 @media screen and (min-width:768px) and (max-width: 1279px) {
 
   .tab-box
   {
     width: 100%;
+  }
+
+  .table__content span b
+  {
+     background: none;
+     border-right: none;
+     border-bottom: none;
   }
 
 .pop-block__table--tablet
