@@ -1991,11 +1991,11 @@ input[type="checkbox"]:checked + label:before {
   padding-top: 20px; }
 
 .table__content span {
-  width: 80%;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  padding-right: 25px; }
+  width: 85%;
+  padding-right: 25px;
+  display: block;
+  padding-left: 20px;
+  padding-top: 20px; }
 
 .table__content span b {
   font-family: "ExoTwo-Bold";
@@ -3183,7 +3183,7 @@ body {
   text-align: center; }
 
 .card_slider_container section p {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   padding: 0px; }
 
