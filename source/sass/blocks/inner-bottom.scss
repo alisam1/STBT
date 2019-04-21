@@ -59,10 +59,23 @@
     display: none;
     color: #fff;
     position: relative;
-    top: 80px;
+    top: -190px;
     margin-left: 25px;
 }
 .modal_bottom input:checked ~ .block { display: block; }
+
+.modal_open
+{
+  border: none;
+  background: inherit;
+  margin-left: 18px;
+}
+
+.modal_close
+{
+  background: inherit;
+  border: none;
+}
 
 @media screen and (min-width:768px) and (max-width: 1279px) {
 
@@ -76,6 +89,37 @@
     width: auto;
     margin: 0 auto;
     width: 90%;
+  }
+
+  .professional_title
+  {
+    width: auto;
+    height: 40px;
+    background-color: #2d5f77;
+    font-family: "ExoTwo-Regular";
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .modal_bottom
+  {
+    height: 40px;
+    width: auto;
+    margin-left: -25px;
+  }
+  .modal_bottom .block {
+      width:80%;
+      height: auto;
+      background: #2d5f77;
+      display: none;
+      color: #fff;
+      position: relative;
+      top: -182px;
+      margin: 0 auto;
+      left: 10px;
   }
 
   }

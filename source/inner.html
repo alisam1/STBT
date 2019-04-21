@@ -72,7 +72,7 @@
               <div class="section_description">
                <p class="section_text"><span>4</span>документа</p>
                <button id = "modalButton_1"><img src="img/section_block_open.png" alt=""></button>
-                <div id = "modal_1">
+                <div class="openWindow" id = "modal_1">
                   <button class="close-menu"><img src="img/modal_icon_close.png" alt=""></button>
                     <div class="modal_inner__img"><img src="img/section_left_big_icon.png" alt=""></div>
                   <p class="modal_inner__text">В соответствии со статистикой Роструда, около 50 % штрафов при проверках предприятий – это административная ответственность за нарушения именно в области охраны труда, а все потому что специалисты вовремя не прошли обучающий курс. Согласно ст. 5.27 КоаАП РФ, размер суммы за несоблюдение законодательства может составить от 30 до 50 тысяч рублей. Также инспекция имеет право приостановить деятельность организации сроком на 3 месяца (90 суток). Возможные финансовые потери в результате применения данной меры каждый директор и предприниматель может подсчитать сам.</p>
@@ -146,9 +146,10 @@
                <p class="describe_price"><img src="img/icon_basket.png" alt=""> <span>7500 руб.</span></p>
             </div>
             <div class="modal_bottom">
-            <input type="checkbox" id="check">
-            <label for="check"><img src="img/see_icon.png" alt=""></label>
-            <div class="block"><div class="modal_top">
+            <button class="modal_open" onclick="modalOpen()"><img src="img/see_icon.png" alt=""></button>
+            <div class="block">
+            <div class="modal_top">
+            <button class="modal_close" onclick="modalClose()"><img src="img/modal_icon_close.png" alt=""></button>
             <nav class="breadcrumbs">
               <ul class="breadcrumbs_list">
                 <li class="breadcrumbs_item">Обучение по охране труда</li>
@@ -426,9 +427,10 @@
                <p class="describe_price"><img src="img/icon_basket.png" alt=""> <span>7500 руб.</span></p>
             </div>
             <div class="modal_bottom">
-            <input type="checkbox" id="check">
-            <label for="check"><img src="img/see_icon.png" alt=""></label>
-            <div class="block"><div class="modal_top">
+            <button class="modal_open" onclick="modalOpen()"><img src="img/see_icon.png" alt=""></button>
+            <div class="block">
+            <div class="modal_top">
+            <button class="modal_close" onclick="modalClose()"><img src="img/modal_icon_close.png" alt=""></button>
             <nav class="breadcrumbs">
               <ul class="breadcrumbs_list">
                 <li class="breadcrumbs_item">Обучение по охране труда</li>
@@ -521,5 +523,18 @@
     </div>
 
     <script src="js/inner-modal.js"></script>
+    <script>
+    function modalOpen() {
+      var modalVisual = document.querySelectorAll(".block");
+      for(var i=0; i<modalVisual.length; i++)
+      modalVisual[i].style.display='block';
+    }
+    function modalClose() {
+      var modalHidden = document.querySelectorAll(".block");
+      for(var i=0; i<modalHidden.length; i++)
+      modalHidden[i].style.display='none';
+    }
+</script>
+
   </body>
   </html>
